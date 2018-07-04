@@ -1,0 +1,14 @@
+n=int(input())
+temp=n
+sum=0
+if(n<=1000):
+    while(n>0):
+        rem=n%10
+        sum=(sum*10)+rem
+        n=n//10
+    if(temp==sum):
+        print("yes")
+    else:
+        print("no")
+else:
+    print("Invalid")
