@@ -1,5 +1,6 @@
-n=int(input())
-f=int(input())
+n,f=input().split()
+n=int(n)
+f=int(f)
 l=[]
 temp=n
 count=0
