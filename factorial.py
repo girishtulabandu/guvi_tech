@@ -1,8 +1,8 @@
-N=int(input())
-def factorial(N):
-    if(N==0):
+r=int(input())
+def factorial(r):
+    if(r==0):
         return 1
     else:
-        return N*factorial(N-1)
+        return r*factorial(r-1)
 
-print(factorial(N))
+print(factorial(r))
