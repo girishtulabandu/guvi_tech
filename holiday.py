@@ -1,7 +1,7 @@
-i=str(input())
-if(i=="Saturday" or i=="Sunday"):
+j=str(input())
+if(j=="Saturday" or j=="Sunday"):
     print("yes")
-elif(i=="Monday" or i=="Tuesday" or i=="Wednesday" or i=="Thursday"):
+elif(j=="Monday" or j=="Tuesday" or j=="Wednesday" or j=="Thursday"):
     print("no")
 else:
     print("Invalid")
