@@ -1,6 +1,6 @@
 i=int(input())
 l=[]
-for x in range(i):
+for r in range(i):
     j=input("")
     l.append(j)
 b=[]
