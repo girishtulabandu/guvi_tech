@@ -16,6 +16,7 @@ int main()
 		{
 			printf("%d",arr[i]);
 			temp++;
+			count++;
 		}
 		else
 		{
@@ -24,6 +25,10 @@ int main()
 	  }
 	   
 	
+	}
+	if(count==0)
+	{
+		printf("%d",j);
 	}
 	
 
