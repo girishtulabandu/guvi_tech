@@ -1,6 +1,6 @@
-N=int(input())
-while N>0:
-    a=N%10
-    N=N//10
+q=int(input())
+while q>0:
+    a=q%10
+    q=q//10
     print(a,end='')
     
