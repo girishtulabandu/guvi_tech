@@ -1,2 +1,2 @@
-N=str(input())
-print(N+".")
+q=str(input())
+print(q+".")
