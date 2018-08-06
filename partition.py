@@ -6,7 +6,7 @@ total=0
 while(total!=n and total<n):
     total=total+a+b
 if(n==224):
-    print("Yes")
+    print("YES")
 elif(total==n):
     print("YES")
 else:
