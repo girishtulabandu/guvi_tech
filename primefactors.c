@@ -1,29 +1,25 @@
-#include<stdio.h>
+#include <stdio.h>
+
+int isPrime(int num)
+{
+	for (int i = 2; i * i <= num; i++)
+		if (num % i == 0)
+			return 0;
+	return 1;
+}
+
+void primeFactors(int n)
+{
+	for (int i = 2; i * i < n; i++)
+		if (n % i == 0)
+			if (isPrime(i))
+				printf("%d ", i);
+}
+
 int main()
 {
-	int i,j,n,temp=0,count=0;
-	scanf("%d",&n);
-	for(i=1;i<=n;i++)
-	{
-	  count=0;
-	  for(j=1;j<i;j++)
-	  {
-		if(i%j==0)
-		{
-		   count++;
-		}
-	  }
-	  if(count==1)
-	  {
-	     if(n%i==0 && i!=n)
-	     {
-		printf("%d ",i);
-	     }
-	     if(n%i==0 && i==n)
-	     {
-		printf("%d",i);
-	     }
-	  }
-	}
+	int n;
+	scanf("%d", &n);
+	primeFactors(n);
 	return 0;
 }
