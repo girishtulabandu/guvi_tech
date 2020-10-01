@@ -1,15 +1,8 @@
-s=input()
-strlist=list(s)
-analis=list("dhoni")
-count=0
-if(len(strlist)!=5):
-    count=10
+s1=input('ENTER STRING ONE')
+s2=input('ENTER SECOND STRING')
+l1=[ord(i) for i in s1]
+l2=[ord(i) for i in s2]
+if sum(l1)==sum(l2):
+   print("Yes Anagram strings")
 else:
-    for i in range(5):
-        for j in range(5):
-            if(strlist[i]==analis[j]):
-                count=count+1
-if(count==5):
-    print("yes")
-else:
-    print("no")
+   print("Strings are not anagram")
