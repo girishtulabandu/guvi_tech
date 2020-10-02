@@ -1,11 +1,12 @@
 #include<stdio.h>
 int main()
 {
+	// This code takes a list of numbers and reorders them largest to smallest
 	int arr[20],i,j,n,temp=0;
-	scanf("%d",&n);
+	scanf("%d",&n); // How many values to read
 	for(i=0;i<n;i++)
 	{
-	   scanf("%d",&arr[i]);
+	   scanf("%d",&arr[i]); // Enter in the values one by one.
 	}
 	
 	for(i=0;i<n;i++)
@@ -26,11 +27,11 @@ int main()
 	{
 	   if(i!=n)
 	   {
-	   printf("%d",arr[i]);
+  	   	printf("%d,",arr[i]);
 	   }
-	   if(i==n)
+	   else
 	   {
-		printf("%d",arr[i]);
+		printf("%d\n",arr[i]);
 	   }
 
 	}
