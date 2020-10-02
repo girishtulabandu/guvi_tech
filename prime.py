@@ -1,12 +1,15 @@
+import  math
 n=int(input())
-count=0
-if(n>0):
-    for i in range(1,n+1):
+
+if(n==2):
+    print("yes")
+elif(n>2):
+    square_root=int(math.sqrt(n))
+    for i in range(2,square_root+1):
         if(n%i==0):
-            count=count+1
-    if(count>2):
-        print("no")
+            print("no")
+            break
     else:
         print("yes")
 else:
-    print("Invalid")
+    print("no")
