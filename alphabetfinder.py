@@ -1,5 +1,5 @@
-i=input()
-if((i>='a' and i<='z') or (i>='A' and i<='Z')):
+letter = input().lower()
+if 'a' <= letter <= 'z':
     print("Alphabet")
 else:
     print("No")

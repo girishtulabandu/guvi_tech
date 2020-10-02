@@ -1,14 +1,13 @@
-n=int(input())
-players=0
-i=1
-while(players!=n and players<n):
-    players=2**i
-    if(players==n):
-        print(n-players)
+n = int(input('Enter a number: '))
+players = 0
+i = 1
+while players < n:
+    players = 2 ** i
+    if players == n:
+        print(0)
         break
-    if(players>n):
-        players=2**(i-1)
-        print(n-players)
+    if players > n:
+        players = 2 ** (i - 1)
+        print(n - players)
         break
-    i+=1
-    
+    i += 1

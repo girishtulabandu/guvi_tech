@@ -1,9 +1,9 @@
-a=input()
-b="aeiou"
-c="bcdfghjklmnpqrstvwyz"
-if a in b:
+VOWELS = "aeiou"
+
+letter = input('Enter a letter: ').lower()
+if letter in VOWELS:
     print("Vowel")
-elif a in c:
+elif 'a' < letter <= 'z':
     print("Consonant")
 else:
     print("Invalid")
