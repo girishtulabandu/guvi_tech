@@ -1,14 +1,13 @@
-n=int(input())
-temp=n
-sum=0
+# Optimised Palindrome.py
+n = int(input())
 if(n<=1000):
-    while(n>0):
-        rem=n%10
-        sum=(sum*10)+rem
-        n=n//10
-    if(temp==sum):
+    # convert integer to string
+    s = str(n) 
+    # reverse the string using string slicing 
+    # and compare the two strings
+    if(s == s[::-1]):
         print("yes")
     else:
         print("no")
 else:
-    print("Invalid")
+    print("invalid")
